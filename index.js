@@ -61,7 +61,7 @@ const getExchangeInfo = async(countryA, countryB, startDate, endDate) => {
         let resA = await knex('daily').where('country', countryA)
         let resB = await knex('daily').where('country', countryB)
         
-        //if countries not in the daily database search the monthly one
+        //if one of the countries is not in the daily database search the monthly one
         if (resA.length === 0 || resB.length === 0){
             startDate=startDate.slice(0, 7)+'-01'
             endDate=endDate.slice(0, 7)+'-01'
