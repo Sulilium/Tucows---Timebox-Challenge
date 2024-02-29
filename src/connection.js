@@ -1,4 +1,7 @@
 // Establishes a connection to the database
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+
 const knex = require('knex')({
     client: 'mysql',
     connection: {
@@ -10,5 +13,5 @@ const knex = require('knex')({
     }
     });
 
-module.exports = { knex }
+export { knex }
 
