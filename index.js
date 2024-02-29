@@ -104,13 +104,12 @@ const resolvers = {
                 index++
             }
 
-            avgRate=(avgRate[0]-avgRate[1]).toFixed(4)
             return{
                 from: from,
                 to: to,
                 startDate: startDate,
                 endDate: endDate,
-                exchangeDifference: avgRate
+                exchangeDifference: (avgRate[0]-avgRate[1]).toFixed(4)
             };
         }
     },

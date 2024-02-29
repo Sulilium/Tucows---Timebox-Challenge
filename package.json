@@ -2,7 +2,7 @@
   "name": "tucows---timebox-challenge",
   "version": "1.0.0",
   "description": "A timebox challenge where the goal is to make a GET request to a database of exchange rates.\r This request compares 2 countries exchange rates with each other within a specified time frame.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
